@@ -1,0 +1,50 @@
+\documentclass[12pt,french,a4paper]{report}
+\usepackage{MyPack2}
+\usepackage[frenchkw]{algorithm2e}
+
+\initPage[Test d'algorithme]
+
+
+\begin{document}
+
+\tableofcontents
+\clearpage
+
+\part{État de l'art}
+\chapter{empty}
+
+\part{Bli}
+\chapter{ça a l'air intéressant !}
+
+\section{La section}
+\subsection{La sous-section}
+
+On présent une algorithme.
+
+\begin{algorithm}[H]
+\Donnees{this text}
+\Res{how to write algorithm with \LaTeX2e }
+initialization\;
+\Tq{not at end of this document}{
+	read current\;
+	\Si{understand}{
+		go to next section\;
+		current section becomes this one\;
+	}{
+		go back to the beginning of current section\;
+	}
+}
+\caption{How to write algorithms}
+\end{algorithm}
+
+Un peu de math... $\applicationSigne{f}{\R}{\C}$
+
+\[
+\application{f}{\R}{\C}{x}{e^{i\theta}}
+\]
+
+\paragraph{Le paragraphe} qui dit bonjour !
+
+\roadMap
+
+\end{document}
